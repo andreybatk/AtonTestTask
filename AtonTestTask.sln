@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34302.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtonTestTask", "AtonTestTask\AtonTestTask.csproj", "{C1471772-52E3-442F-8301-CF5D43D364E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtonTestTask.NTests", "AtonTestTask.NTests\AtonTestTask.NTests.csproj", "{67CFDEEA-B6C4-4D60-8A83-DAE6E165CA6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1471772-52E3-442F-8301-CF5D43D364E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1471772-52E3-442F-8301-CF5D43D364E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1471772-52E3-442F-8301-CF5D43D364E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1471772-52E3-442F-8301-CF5D43D364E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67CFDEEA-B6C4-4D60-8A83-DAE6E165CA6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67CFDEEA-B6C4-4D60-8A83-DAE6E165CA6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67CFDEEA-B6C4-4D60-8A83-DAE6E165CA6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67CFDEEA-B6C4-4D60-8A83-DAE6E165CA6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5ABE8E06-823E-407B-AD18-7003B819F53F}
+	EndGlobalSection
+EndGlobal
