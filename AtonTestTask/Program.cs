@@ -14,11 +14,18 @@ namespace AtonTestTask
                  .AddSingleton<IAnimalService, AnimalService>()
                  .BuildServiceProvider();
 
-            services.GetRequiredService<IFoodPricesService>().LoadFoodPricesFromFile("prices.txt");
-            services.GetRequiredService<IAnimalInfoService>().LoadAnimalsInfoFromFile("animals.csv");
-            services.GetRequiredService<IAnimalService>().LoadAnimalsFromFile("zoo.csv");
-            var result = services.GetRequiredService<IAnimalService>().CalculateMoney();
-            Console.WriteLine(String.Format("{0:C2}", result));
+            try
+            {
+                services.GetRequiredService<IFoodPricesService>().LoadFoodPricesFromFile("prices.txt");
+                services.GetRequiredService<IAnimalInfoService>().LoadAnimalsInfoFromFile("animals.csv");
+                services.GetRequiredService<IAnimalService>().LoadAnimalsFromFile("zoo.csv");
+                var result = services.GetRequiredService<IAnimalService>().CalculateMoney();
+                Console.WriteLine(String.Format("{0:C2}", result));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
